@@ -1,0 +1,12 @@
+{
+  "version": "v4",
+  "repo": "angular/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "jasmine/jasmine.d.ts": {
+      "commit": "055b3172e8eb374a75826710c4d08677872620d3"
+    }
+  }
+}

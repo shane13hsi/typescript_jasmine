@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "../tmp"
+	},
+	"files": [
+		"unit/StoreSpec.ts",
+    "../src/Store.ts"
+	],
+	"exclude": [
+		"../node_modules"
+	]
+}
