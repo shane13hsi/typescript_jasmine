@@ -12,4 +12,4 @@ open three terminal tab, type on each:
 
 `npm run watch_test_es5` to compile ES6 to ES5 via babel.js
 
-`npm run test:watch` to run Jasmine in watch mode via nodemon
+`npm run watch_test` to run Jasmine in watch mode via nodemon
