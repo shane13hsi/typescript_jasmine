@@ -4,9 +4,13 @@
   "description": "",
   "main": "./dist/store.js",
   "scripts": {
-    "test": "npm run clean_test && npm run build_test && jasmine",
+    "test": "npm run clean_test && npm run build_test_es6 && npm run build_test_es5 && jasmine",
     "clean_test": "rm -rf compiled/",
-    "build_test": "tsc -p spec && babel compiled/es6 --presets es2015,stage-0 --out-dir compiled/es5"
+    "build_test_es6": "tsc -p spec",
+    "build_test_es5": "babel compiled/es6 --presets es2015,stage-0 -d compiled/es5",
+    "watch_test": "nodemon -w compiled/es5 --delay 5 --exec jasmine",
+    "watch_test_es6": "tsc -p spec -w",
+    "watch_test_es5": "babel compiled/es6 --presets es2015,stage-0 -d compiled/es5 -w"
   },
   "keywords": [],
   "devDependencies": {
@@ -15,6 +19,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
+    "nodemon": "^1.8.1",
     "typescript": "^1.7.3"
   },
   "dependencies": {},
